@@ -24,7 +24,7 @@ class Cleaner:
      elif len(x.split(' ',1))>1:
         return x.split(' ',1)[1]
      
-    def prep(self, df):
+    def prep(df):
       df['leadtime in days']=df['End Date']-df['Start Date']
       df['District_Name']=df['Delivery Address Street'].apply(get_district_name)
       df['District_Code']=df['Delivery Address Name'].apply(get_district_code)
