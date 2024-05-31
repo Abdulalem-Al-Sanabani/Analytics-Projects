@@ -13,3 +13,4 @@ df_1[df_1.columns[df_1.columns.str.contains("Date")]].info()
 df_2=cln.prep(df_1)
 print(df_2.columns[-3:])
 
+
